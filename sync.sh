@@ -9,6 +9,7 @@ cp -r -v ~/.config/polybar ~/dotfiles
 cp -r -v ~/.config/rofi ~/dotfiles
 cp -r -v ~/.config/picom.conf ~/dotfiles
 cp -r -v ~/sync.sh ~/dotfiles
+cp -r -v ~/.bashrc ~/dotfiles
 
 echo -e "${RED}DOTFILES COPIED"
 
