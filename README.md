@@ -8,6 +8,7 @@
 
 colorscheme
 https://github.com/catppuccin/catppuccin
+
 wallpapers
 https://github.com/catppuccin/wallpapers/tree/main/os
 
