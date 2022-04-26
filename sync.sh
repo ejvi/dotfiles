@@ -11,6 +11,7 @@ cp -r -v ~/.config/picom.conf ~/dotfiles
 cp -r -v ~/.config/kitty/ ~/dotfiles
 cp -r -v ~/sync.sh ~/dotfiles
 cp -r -v ~/.bashrc ~/dotfiles
+cp -r -v ~/.vimrc ~/dotfiles
 
 echo -e "${RED}DOTFILES COPIED"
 
