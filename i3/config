@@ -93,10 +93,10 @@ bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+h split h
+bindsym Mod1+h split h; exec notify-send "Horizontal Split"
 
 # split in vertical orientation
-bindsym Mod1+v split v
+bindsym Mod1+v split v; exec notify-send "Vertical Split"
 
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
