@@ -1,6 +1,7 @@
 call plug#begin()
 
 Plug 'preservim/vim-pencil'
+Plug 'preservim/vim-markdown'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
@@ -10,6 +11,7 @@ let g:pencil#wrapModeDefault = 'soft'
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 
+set belloff=all
 
 augroup pencil
   autocmd!
@@ -21,7 +23,7 @@ augroup END
    let w:ProseModeOn = 0
 
    function EnableProseMode()
-       setlocal spell spelllang=ru
+       setlocal nospell
        Goyo 66
        SoftPencil
        echo "Prose Mode On"
