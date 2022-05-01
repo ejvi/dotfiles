@@ -27,3 +27,5 @@ fi
 unset rc
 
 alias cfg="micro ~/.config/i3/config"
+alias ru="setxkbmap -layout ru"
+alias en="setxkbmap -layout en"
