@@ -21,8 +21,8 @@ font pango:JetBrainsMono Nerd Font 14
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
+exec_always --no-startup-id killall picom &
 exec_always --no-startup-id picom &
-exec --no-startup-id gsettings set org.freedesktop.ibus.panel xkb-icon-rgba "#F5E0DC"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id feh --bg-center Downloads/2022-04-23_15-36.png
 
@@ -61,7 +61,8 @@ floating_modifier Mod1
 bindsym Mod1+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym Mod1+Shift+q kill
+#bindsym Mod1+Shift+q kill
+bindcode Mod1+Shift+24 kill
 
 # start dmenu (a program launcher)
 bindsym Mod1+d exec --no-startup-id rofi -show drun
