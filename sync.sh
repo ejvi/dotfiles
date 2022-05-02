@@ -7,6 +7,7 @@ cp -r -v ~/.config/dunst ~/dotfiles
 cp -r -v ~/.config/i3 ~/dotfiles
 cp -r -v ~/.config/polybar ~/dotfiles
 cp -r -v ~/.config/rofi ~/dotfiles
+cp -r -v ~/.local/share/rofi/themes/catpuccin.rasi ~/dotfiles/rofi
 cp -r -v ~/.config/picom.conf ~/dotfiles
 cp -r -v ~/.config/kitty/ ~/dotfiles
 cp -r -v ~/sync.sh ~/dotfiles
