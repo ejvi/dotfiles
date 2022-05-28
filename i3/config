@@ -21,7 +21,6 @@ font pango:JetBrainsMono Nerd Font 14
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
-exec_always --no-startup-id killall picom &
 exec_always --no-startup-id picom &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id feh --bg-center Downloads/2022-04-23_15-36.png
@@ -229,3 +228,9 @@ client.background       #FFFFFF
 
 
 exec killall nm-applet
+for_window [class=".*"] border pixel 3
+
+smart_gaps on
+gaps inner 8
+gaps outer 8
+exec_always picom &
