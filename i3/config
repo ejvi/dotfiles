@@ -25,8 +25,7 @@ exec_always --no-startup-id picom &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id feh --bg-center Downloads/2022-04-23_15-36.png
 
-exec_always setxkbmap -layout us,ru
-exec_always setxkbmap -option 'grp:ctrl_shift_toggle'
+exec_always --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:ctrl_shift_toggle
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
